@@ -1,3 +1,27 @@
+body {
+  background-color: white;
+}
 .my-h1 {
   color: blue;
+}
+.index-login {
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  left: 50%;
+  top: 50%;
+  /* border: 3px solid blueviolet; */
+  background-color: lightblue;
+  border-radius: 2%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+input {
+  width: 70%;
+  border-radius: 2%;
+}
+.submit-btn {
+  width: 40%;
+  background-color: blue;
+  color: white;
 }
