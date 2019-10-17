@@ -9,32 +9,34 @@
   <body>
     <!-- <h1 class="my-h1">This is just dummy gmail</h1> -->
     <div class="index-login">
-      <form>
-        Email
-        <br />
-        <input
-          type="email"
-          name="email"
-          id="user_email"
-          placeholder="Enter your Email"
-          required
-        />
-        <br />
-        <br />
-        Password
-        <br />
-        <input
-          type="password"
-          name="password"
-          id="user_pwd"
-          placeholder="Password"
-          required
-        />
-        <br />
-        <br />
-        <button type="submit" class="submit-btn">Login</button>
-        <button class="submit-btn">Create account</button>
-      </form>
+      Email
+      <br />
+      <input
+        type="email"
+        name="email"
+        value="this@email.com"
+        id="user_email"
+        placeholder="Enter your Email"
+        required
+      />
+      <br />
+      <br />
+      Password
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="user_pwd"
+        value="thispass"
+        placeholder="Password"
+        required
+      />
+      <br />
+      <br />
+      <button onclick="login()" class="submit-btn">Login</button>
+      <button class="submit-btn">Create account</button>
     </div>
+    <h1 id="user_email_dis"></h1>
+    <h1 id="user_pwd_dis"></h1>
   </body>
 </html>
