@@ -8,27 +8,128 @@
   <body>
     <div class="nav-parent">
       <div class="nav-bar">
-<h2 style="float: right;" id="intro"></h2>
+        <!-- <h3 style="float: left;color: black;">Search here:</h3> -->
+        <input type="text" class="search-input" placeholder="Search Here" />
+        <button class="search-btn">Search</button>
+        <h3 style="float: right;" id="intro"></h3>
       </div>
-      <div class="sidenav">
-        <a href="#gmail">Gdmail</a>
-        <br>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+      <div id="sidenav">
+        <a href="#gmail" id="logo" class="menu-item">Gdmail</a>
+        <br />
+        <a href="#inbox" class="menu-item active">Inbox</a>
+        <a href="#sent" class="menu-item">Sent</a>
+        <a href="#stared" class="menu-item">Stared</a>
+        <a href="#draft" class="menu-item">Draft</a>
       </div>
     </div>
-    <!-- <div class="inbox">
-      <div class="main">
-        <h2>Sidebar</h2>
-        <p>This sidebar is of full height (100%) and always shown.</p>
-        <p>Scroll down the page to see the result.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      </div>
+    <div id="data"></div>
+    <!-- <div id="inbox-start">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div id="inbox-start">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox" id="data">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div> -->
+    <!--    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
+    </div>
+    <div class="inbox">
+      <span class="item1">Subject1</span>
+      <span class="item2">Description</span>
     </div> -->
   </body>
 </html>
