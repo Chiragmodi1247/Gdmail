@@ -8,7 +8,9 @@ function login() {
   //   document.getElementById("user_pwd_dis").innerHTML = pwd;
 
   if (name === "this@email.com" && pwd === "thispass") {
-    location.replace(
+    sessionStorage.setItem("currentUsr", name);
+    sessionStorage.setItem("password", pwd);
+    location.assign(
       "file:///F:/React%20-%20project/Gdmail/Screens/dashboard.html"
     );
   } else {
