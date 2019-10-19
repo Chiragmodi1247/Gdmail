@@ -80,6 +80,9 @@ body {
   padding-top: 60px;
   margin-left: 15%;
 }
+a {
+  text-decoration: none;
+}
 .inbox {
   display: grid;
   grid-template-columns: 200px auto;

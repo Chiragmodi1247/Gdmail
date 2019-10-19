@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", event => {
     var node = document.createElement("a");
     var sub = document.createElement("span");
     var des = document.createElement("span");
+    // node.setAttribute("style", "background-color: red;");
+    node.setAttribute("href", "https://www.w3schools.com");
     node.className = "inbox";
     sub.className = "item1";
     des.className = "item2";
