@@ -11,7 +11,7 @@ body {
   width: 85%;
   margin-left: 15%;
 }
-.search-input {
+#search-input {
   color: black;
   border: 2px solid gainsboro;
   border-radius: 5px;

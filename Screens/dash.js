@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", event => {
     "1.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layouta reader will be distracted by the readable content of a page when looking at its layout.",
     "2.It is a long established fact that a reader will be distracted by the readable content of a page when looking at itsthe readable content of a page when looking at its layout layout.",
     "3.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    "4.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "4.It is a long gear fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "5.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "6.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "7.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -79,3 +79,36 @@ document.addEventListener("DOMContentLoaded", event => {
     document.getElementById("data").appendChild(node);
   }
 });
+
+function mail_seacrh() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search-input");
+  // console.log(input);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("data");
+  mail = table.getElementsByClassName("inbox");
+  // console.log(mail.length);
+  // sub = mail[2].getElementsByClassName("item1")[0];
+  // console.log(sub.textContent);
+  for (i = 0; i < mail.length; i++) {
+    sub = mail[i].getElementsByClassName("item1")[0];
+    des = mail[i].getElementsByClassName("item2")[0];
+    if (sub) {
+      txtValue = sub.textContent || sub.innerText;
+      // console.log(txtValue);
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        mail[i].style.display = "";
+      } else {
+        mail[i].style.display = "none";
+      }
+    }
+    if (des) {
+      txtValue = des.textContent || des.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        mail[i].style.display = "";
+      } else {
+        mail[i].style.display = "none";
+      }
+    }
+  }
+}
