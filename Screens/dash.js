@@ -56,11 +56,8 @@ document.addEventListener("DOMContentLoaded", event => {
     "20.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   ];
 
-  // console.log(desc[8][132]);
-
-  // console.log(subject.length);
   for (var j = 0; j < subject.length; j++) {
-    var node = document.createElement("div");
+    var node = document.createElement("a");
     var sub = document.createElement("span");
     var des = document.createElement("span");
     node.className = "inbox";
